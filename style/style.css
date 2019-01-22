@@ -13,8 +13,13 @@ nav{
     background-color: black; 
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
 .custom-nav{
-    width:90%;
+    width:50%;
     height: inherit;
     display: flex;
     flex-direction: row;
@@ -29,25 +34,23 @@ nav{
 }
 
 .main-container{
-    width: 90%;
+    width: 50%;
+    min-width: 760px; /* min width equals to img width*/
     margin: auto;
 }
 
 img{
     background-repeat: no-repeat;
-    width: 800px;
-    height: 400px;
+    width: 760px;
+    height: 380px;
+  
 }
 
 .content{
     display: flex;
     flex-direction: column;    
 }
-.content-block{
-    display: flex;    
-    word-break:break-word;
-    margin-top: 20px;
-}
+
 
 .content-block div{
     margin-top: 40px;
@@ -57,4 +60,20 @@ img{
 .divider{
     margin-top: 10px; 
     border: 1px solid black;
+}
+
+.photo-container{
+    text-align: center;
+    position: relative;
+}
+
+.photo-text{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    top: 20;
+    bottom: 20;
+    left: 20;
+    right: 20;
+    font-weight: 600;
 }
